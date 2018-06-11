@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    background-image: url(fullsize_a.jpg) ;
+    
+    background-size: cover;
+    
+    
+}
+
+.container{
+   width:90%; 
+    margin:0px auto ;
+    
+    
+
+}
+header{
+    opacity:.8 ;
+   
+    background-color: black;
+    
+    
+    
+}
+
+.logo{
+    float:left;
+   
+    background-color: aliceblue;
+    
+   
+}
+nav{
+    float:left;
+   
+   
+    
+}
+
+header::after{
+    content:'';
+    display: table;
+    clear:both;
+
+}
+ul{
+    margin:20px;
+    padding:0px;
+    list-style: none
+}
+ul li {
+    float:left;
+    width:200px;
+    height:20;
+    text-align: center;
+   line-height: 80px;
+    font-size:20px;
+    margin-right:100px;
+    position:relative;
+}
+ul li a{
+    color:white;
+    text-decoration: none;
+    display:block;
+    text-transform: uppercase;
+}
+ul li a:hover{
+    color: chartreuse;
+
+}
+ul li a::before{
+    content:'';
+    display:block;
+    height:5px;
+    width:0%;
+    background-color: #fff;
+    position:absolute;
+    top:-5px;
+    transition:all ease-in-out 250ms;
+}
+ul li a:hover::before{
+    width:100%;
+
+
+}
+    
+    
+    
+
+
+
+
+
